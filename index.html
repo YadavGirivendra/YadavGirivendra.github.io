@@ -7,7 +7,7 @@
 
 <!-- ===== SEO ===== -->
 <title>Girivendra Yadav | Air Quality Modeling Researcher</title>
-<meta name="description" content="Girivendra Yadav — graduate researcher in atmospheric science and air quality modeling. Working on InMAP, WRF-Chem, and PM2.5 simulations over India.">
+<meta name="description" content="Girivendra Yadav — graduate researcher in atmospheric science and air quality modeling. Working on PAVITRA-InMAP, and PM2.5 simulations over India.">
 <meta name="author" content="Girivendra Yadav">
 <meta name="keywords" content="Girivendra Yadav, Girivendra, air quality modeling, InMAP, WRF-Chem, PM2.5, atmospheric science, India, PAVITRA, researcher">
 <link rel="canonical" href="https://yadavgirivendra.github.io/">
@@ -28,13 +28,13 @@
   "name": "Girivendra Yadav",
   "alternateName": "Girivendra",
   "jobTitle": "Graduate Researcher",
-  "description": "Researcher in atmospheric science and air quality modeling, working on InMAP and WRF-Chem simulations over India.",
+  "description": "Researcher in atmospheric science and air quality modeling, working on reduced complexity model development and Air Quality simulations over India.",
   "url": "https://yadavgirivendra.github.io/",
   "sameAs": [
     "https://github.com/YadavGirivendra",
     "https://scholar.google.com/citations?user=YOUR_ID",
     "https://orcid.org/0000-0000-0000-0000",
-    "https://www.linkedin.com/in/yourusername"
+    "https://www.linkedin.com/in/yadavgirivendrapratap/"
   ],
   "knowsAbout": [
     "Air Quality Modeling",
@@ -958,19 +958,16 @@
       <div class="body-content about-text">
         <p>
           I'm a graduate researcher working at the intersection of
-          <span class="term">atmospheric chemistry</span>,
+          <span class="term">air quality modelling</span>,
           <span class="term">numerical modeling</span>, and
-          <span class="term">high-performance computing</span>. My current work focuses on
-          adapting the Intervention Model for Air Pollution (InMAP) for the Indian subcontinent —
-          running seasonal simulations across DJF, MAM, JJAS, and ON periods and benchmarking
+          <span class="term">policy interventions</span>, <span class="term">energy and technology transition</span>. My current work focuses on
+          improving reduced complexity air quality model (InMAP) and using it for helping improve the Indias air quality — playing with codes,
+          running simulations, analysisng results, formulating hypothesis,and benchmarking
           them against WRF-Chem and station observations.
         </p>
         <p>
           A typical day is split between the Go source of InMAP, Python pipelines for
-          evaluation and visualization, and SLURM on our HPC cluster. Recently I built a
-          <span class="em">Monte Carlo calibration pipeline</span> that estimates a Jacobian via
-          linear regression and uses bounded least-squares to tune model parameters against ~110
-          observation stations.
+          evaluation and visualization, and SLURM on our HPC cluster.
         </p>
         <p>
           Beyond the technical work, I care about <span class="term">why this matters</span>:
@@ -995,11 +992,9 @@
         <div class="research-grid">
           <article class="research-card">
             <div class="tag">Project · Ongoing</div>
-            <h3>InMAP for India</h3>
+            <h3>Improving PAVITRA-InMAP for India</h3>
             <p>
-              Adapting the InMAP reduced-complexity model for seasonal air-quality simulation
-              across the Indian subcontinent. Navigating Mercator/LCC coordinate complexities
-              and benchmarking against WRF-Chem.
+              Modifying the model to reduce the bias against WRFChen and observations.
             </p>
           </article>
           <article class="research-card">
@@ -1009,25 +1004,7 @@
               Evaluating five InMAP configurations across five PM₂.₅ species. Probing how
               dry-deposition velocity and vertical mixing parameters drive NMB and IOA against
               station data.
-            </p>
-          </article>
-          <article class="research-card">
-            <div class="tag">Method</div>
-            <h3>Monte Carlo Calibration</h3>
-            <p>
-              A 500-sample parameter sweep run via SLURM, a regression-based Jacobian, and a
-              bounded least-squares solve to tune four key parameters against ~110 PM₂.₅
-              observation stations.
-            </p>
-          </article>
-          <article class="research-card">
-            <div class="tag">Code · InMAP Fork</div>
-            <h3>Split Dry Deposition</h3>
-            <p>
-              Separating primary and secondary particle dry-deposition pathways in the InMAP
-              Go codebase — touching framework, preproc, chem, and vargrid — to enable
-              independent parameter tuning.
-            </p>
+            </p>          
           </article>
         </div>
       </div>
